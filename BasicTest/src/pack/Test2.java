@@ -7,6 +7,7 @@ public class Test2 {
 		//convertion double to float
 		float pi = (float)3.1416;
 		float p12 = 3.1416f; 
+		
 	}
 
 }
