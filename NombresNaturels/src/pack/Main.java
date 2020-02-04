@@ -1,3 +1,8 @@
+//caracteristicas fundmentales de objetos
+//encapsulacion: guarda la complejidad
+//interfaz: es el contrato y va a autorizar los metodos que son accesibles
+
+
 package pack;
 
 public class Main {

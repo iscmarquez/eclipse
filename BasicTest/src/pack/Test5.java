@@ -2,6 +2,8 @@ package pack;
 
 import java.util.Scanner;
 
+//override redefine le comportmente
+//overload le comportement est different mais la quantite de parametres est different
 
 public class Test5 {
 
@@ -13,34 +15,24 @@ public class Test5 {
 
 		int a = sc.nextInt();
 
-		boolean isPremier = false;
-
-		for(int i = 2; i < a; i++)
-
+	
+		if(a < 1)
 		{
-
-			if(a%i == 0)
-
-			{
-
-				isPremier = true;
-
-				break;
-
-			}
-
+			System.out.println("Nombre n'est pas premier");
+				
 		}
-
-		
-
-		if(isPremier)
-
-			System.out.println(a + " n'est pas premier");
-
 		else
+		{
+			boolean diviseurTrouve = true;
 
+		for(int i = 2; (i < a && diviseurTrouve); i++)
+			if(a%i == 0)
+				diviseurTrouve = false;
+		if(diviseurTrouve)
 			System.out.println(a + " est premier");
-
+		else
+			System.out.println(a + " n'est pas premier");
+		}
 	}
 
 
